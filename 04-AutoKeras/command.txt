@@ -1,0 +1,3 @@
+cd C:\Users\zpbap\Works\datasense-aug2019\04-AutoKeras
+
+docker run -it --rm -v %cd%\app:/app --shm-size 2G datasense-autokeras python run.pys

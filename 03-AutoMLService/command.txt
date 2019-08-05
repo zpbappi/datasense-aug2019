@@ -1,0 +1,4 @@
+cd C:\Users\zpbap\Works\datasense-aug2019\03-AutoMLService
+tail -n 5 test.csv
+activate azure-automl
+python run.py

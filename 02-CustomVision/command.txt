@@ -1,0 +1,6 @@
+cd C:\Users\zpbap\Works\datasense-aug2019\02-CustomVision
+
+docker run -p 127.0.0.1:8080:80 -d datasense
+
+
+curl -X POST http://127.0.0.1:8080/image -F imageData=@bangla-digits/digit_42.jpg

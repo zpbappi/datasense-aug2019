@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo - Face and facial features detection</title>
+  <script type="module" src="face.js">
+  </script>
+</head>
+<body>
+  <form name="inputForm" id="inputForm" method="POST">
+    <h3>Demo - Face and facial features detection</h3>
+    <input type="file" name="file" id="file"/><br><br>
+    <button type="submit">Analyze</button><br>
+  </form>
+
+  <div style="display: flex;">
+    <div id="canvas" style="position: relative; border: 1px solid gray; flex: 0 0 1000px">
+      <img id="displayImage" style="width: 100%"/>
+    </div>
+    <div>
+      <h4 style="margin-top: 0">JSON</h4>
+      <textarea id="jsonValue" readonly style="min-height: 500px; min-width: 300px; font-size: 20px;"></textarea>
+    </div>
+  </div>
+</body>
+</html>
